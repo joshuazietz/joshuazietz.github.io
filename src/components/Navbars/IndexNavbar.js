@@ -25,6 +25,8 @@ import {
 } from "reactstrap";
 import ContactForm from "../main/Contact";
 
+import { HashRouter, Route, Link } from "react-router-dom";
+
 function IndexNavbar() {
     const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
     const [navbarCollapse, setNavbarCollapse] = React.useState(false);
@@ -64,12 +66,14 @@ function IndexNavbar() {
         <Navbar className={classnames("fixed-top", navbarColor)} expand="lg">
             <Container>
                 <div className="navbar-translate">
-                    <NavbarBrand
-                        data-placement="bottom"
-                        href="/"
-                    >
-                        <i className="fa fa-home"/>
-                    </NavbarBrand>
+                    <Link to={'/'} >
+                        <NavbarBrand
+                            data-placement="bottom"
+                            href="/"
+                        >
+                            <i className="fa fa-home"/>
+                        </NavbarBrand>
+                    </Link>
                     <button
                         aria-expanded={navbarCollapse}
                         className={classnames("navbar-toggler navbar-toggler", {
@@ -110,20 +114,20 @@ function IndexNavbar() {
                                 <p className="d-lg-none">GitHub</p>
                             </NavLink>
                         </NavItem>
-                        <NavItem>
-                            <NavLink
-                                href="/me"
-                            >
-                                About Me
-                            </NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink
-                                href="/resume"
-                            >
-                                Resume
-                            </NavLink>
-                        </NavItem>
+                        <Link to={'me'} >
+                            <NavItem>
+                                <NavLink>
+                                    about me
+                                </NavLink>
+                            </NavItem>
+                        </Link>
+                        <Link to={'resume'} >
+                            <NavItem>
+                                <NavLink>
+                                    resume
+                                </NavLink>
+                            </NavItem>
+                        </Link>
                         <NavItem>
                             <Button
                                 className="btn-round"

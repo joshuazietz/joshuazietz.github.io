@@ -31,9 +31,9 @@ import Resume from "./views/Resume";
 // others
 
 ReactDOM.render(
-  <BrowserRouter basename={process.env.PUBLIC_URL}>
+  <BrowserRouter>
     <Switch>
-      <Route path="/index" render={(props) => <Index {...props} />} />
+      <Route exact path="/" render={(props) => <Index {...props} />} />
       <Route
           path="/resume"
           render={(props) => <Resume {...props} />}
@@ -42,7 +42,7 @@ ReactDOM.render(
           path="/me"
           render={(props) => <ProfilePage {...props} />}
       />
-      <Redirect to="/index" />
+      <Redirect to="/" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

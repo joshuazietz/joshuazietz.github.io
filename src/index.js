@@ -33,16 +33,16 @@ import Resume from "./views/Resume";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/portfolio/index" render={(props) => <Index {...props} />} />
+      <Route path="/index" render={(props) => <Index {...props} />} />
       <Route
-          path="/portfolio/resume"
+          path="/resume"
           render={(props) => <Resume {...props} />}
       />
       <Route
-          path="/portfolio/me"
+          path="/me"
           render={(props) => <ProfilePage {...props} />}
       />
-      <Redirect to="/portfolio/index" />
+      <Redirect to="/index" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

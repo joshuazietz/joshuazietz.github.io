@@ -34,20 +34,16 @@ import Contact from "./components/main/Contact";
 ReactDOM.render(
   <BrowserRouter>
     <Switch>
-      <Route path="/index" render={(props) => <Index {...props} />} />
+      <Route path="/portfolio/index" render={(props) => <Index {...props} />} />
       <Route
-          path="/resume"
+          path="/portfolio/resume"
           render={(props) => <Resume {...props} />}
       />
       <Route
-          path="/me"
+          path="/portfolio/me"
           render={(props) => <ProfilePage {...props} />}
       />
-      <Route
-          path="/contact"
-          render={(props) => <Contact {...props} />}
-      />
-      <Redirect to="/index" />
+      <Redirect to="/portfolio/index" />
     </Switch>
   </BrowserRouter>,
   document.getElementById("root")

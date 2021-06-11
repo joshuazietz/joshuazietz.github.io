@@ -112,14 +112,14 @@ function IndexNavbar() {
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                href="/me"
+                                href="/portfolio/me"
                             >
                                 About Me
                             </NavLink>
                         </NavItem>
                         <NavItem>
                             <NavLink
-                                href="/resume"
+                                href="/portfolio/resume"
                             >
                                 Resume
                             </NavLink>

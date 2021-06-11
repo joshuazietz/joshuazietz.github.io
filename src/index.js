@@ -31,7 +31,7 @@ import Resume from "./views/Resume";
 // others
 
 ReactDOM.render(
-  <BrowserRouter>
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Switch>
       <Route path="/index" render={(props) => <Index {...props} />} />
       <Route

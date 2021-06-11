@@ -112,20 +112,16 @@ function IndexNavbar() {
                                 <p className="d-lg-none">GitHub</p>
                             </NavLink>
                         </NavItem>
-                        <Link to={'/me'}>
-                            <NavItem>
-                                <NavLink data-placement="bottom" >
-                                    about me
-                                </NavLink>
-                            </NavItem>
-                        </Link>
-                        <Link to={'/resume'}>
-                            <NavItem>
-                                <NavLink data-placement="bottom">
-                                    resume
-                                </NavLink>
-                            </NavItem>
-                        </Link>
+                        <NavItem>
+                            <NavLink data-placement="bottom" href={'/#/me'} >
+                                about me
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink data-placement="bottom" href={'/#/resume'}>
+                                resume
+                            </NavLink>
+                        </NavItem>
                         <NavItem>
                             <Button
                                 className="btn-round"

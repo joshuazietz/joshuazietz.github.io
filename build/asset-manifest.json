@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/paper-kit-react/static/css/main.76caf78b.chunk.css",
-    "main.js": "/paper-kit-react/static/js/main.c40147b7.chunk.js",
-    "main.js.map": "/paper-kit-react/static/js/main.c40147b7.chunk.js.map",
-    "runtime-main.js": "/paper-kit-react/static/js/runtime-main.fafd944a.js",
-    "runtime-main.js.map": "/paper-kit-react/static/js/runtime-main.fafd944a.js.map",
-    "static/css/2.aeaa2a60.chunk.css": "/paper-kit-react/static/css/2.aeaa2a60.chunk.css",
-    "static/js/2.de60123d.chunk.js": "/paper-kit-react/static/js/2.de60123d.chunk.js",
-    "static/js/2.de60123d.chunk.js.map": "/paper-kit-react/static/js/2.de60123d.chunk.js.map",
-    "index.html": "/paper-kit-react/index.html",
-    "static/css/2.aeaa2a60.chunk.css.map": "/paper-kit-react/static/css/2.aeaa2a60.chunk.css.map",
-    "static/css/main.76caf78b.chunk.css.map": "/paper-kit-react/static/css/main.76caf78b.chunk.css.map",
-    "static/js/2.de60123d.chunk.js.LICENSE.txt": "/paper-kit-react/static/js/2.de60123d.chunk.js.LICENSE.txt",
-    "static/js/main.c40147b7.chunk.js.LICENSE.txt": "/paper-kit-react/static/js/main.c40147b7.chunk.js.LICENSE.txt",
-    "static/media/clouds.png": "/paper-kit-react/static/media/clouds.3c700c13.png",
-    "static/media/me.jpg": "/paper-kit-react/static/media/me.34d87a54.jpg",
-    "static/media/napali.jpg": "/paper-kit-react/static/media/napali.69e4c9e5.jpg",
-    "static/media/paper-kit.scss?v=1.3.0": "/paper-kit-react/static/media/nucleo-icons.ec16bc4c.woff2",
-    "static/media/resume.1bd0ecc1.pdf": "/paper-kit-react/static/media/resume.1bd0ecc1.pdf"
+    "main.css": "/portfolio/static/css/main.5f103a93.chunk.css",
+    "main.js": "/portfolio/static/js/main.26f6d3bb.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.26f6d3bb.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.76232b81.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.76232b81.js.map",
+    "static/css/2.aeaa2a60.chunk.css": "/portfolio/static/css/2.aeaa2a60.chunk.css",
+    "static/js/2.e19e0b6d.chunk.js": "/portfolio/static/js/2.e19e0b6d.chunk.js",
+    "static/js/2.e19e0b6d.chunk.js.map": "/portfolio/static/js/2.e19e0b6d.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "static/css/2.aeaa2a60.chunk.css.map": "/portfolio/static/css/2.aeaa2a60.chunk.css.map",
+    "static/css/main.5f103a93.chunk.css.map": "/portfolio/static/css/main.5f103a93.chunk.css.map",
+    "static/js/2.e19e0b6d.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e19e0b6d.chunk.js.LICENSE.txt",
+    "static/js/main.26f6d3bb.chunk.js.LICENSE.txt": "/portfolio/static/js/main.26f6d3bb.chunk.js.LICENSE.txt",
+    "static/media/clouds.png": "/portfolio/static/media/clouds.3c700c13.png",
+    "static/media/me.jpg": "/portfolio/static/media/me.34d87a54.jpg",
+    "static/media/napali.jpg": "/portfolio/static/media/napali.69e4c9e5.jpg",
+    "static/media/paper-kit.scss?v=1.3.0": "/portfolio/static/media/nucleo-icons.ec16bc4c.woff2",
+    "static/media/resume.1bd0ecc1.pdf": "/portfolio/static/media/resume.1bd0ecc1.pdf"
   },
   "entrypoints": [
-    "static/js/runtime-main.fafd944a.js",
+    "static/js/runtime-main.76232b81.js",
     "static/css/2.aeaa2a60.chunk.css",
-    "static/js/2.de60123d.chunk.js",
-    "static/css/main.76caf78b.chunk.css",
-    "static/js/main.c40147b7.chunk.js"
+    "static/js/2.e19e0b6d.chunk.js",
+    "static/css/main.5f103a93.chunk.css",
+    "static/js/main.26f6d3bb.chunk.js"
   ]
 }

@@ -18,8 +18,7 @@
 */
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Redirect, Switch } from "react-router-dom";
-import { HashRouter, Route, Link } from "react-router-dom";
+import { HashRouter, Route } from "react-router-dom";
 
 // styles
 import "bootstrap/scss/bootstrap.scss";

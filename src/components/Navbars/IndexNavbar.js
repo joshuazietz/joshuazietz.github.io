@@ -25,7 +25,7 @@ import {
 } from "reactstrap";
 import ContactForm from "../main/Contact";
 
-import { HashRouter, Route, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 function IndexNavbar() {
     const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
@@ -113,12 +113,12 @@ function IndexNavbar() {
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink data-placement="bottom" href={'/#/me'} >
+                            <NavLink data-placement="bottom" href={'/#/me'} onClick={toggleNavbarCollapse}>
                                 about me
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink data-placement="bottom" href={'/#/resume'}>
+                            <NavLink data-placement="bottom" href={'/#/resume'} onClick={toggleNavbarCollapse}>
                                 resume
                             </NavLink>
                         </NavItem>

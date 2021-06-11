@@ -23,7 +23,7 @@ import Constants from "../../assets/Constants";
 
 // reactstrap components
 import {
-    Alert,
+    Alert, Button,
     Input,
     InputGroup,
     InputGroupAddon,
@@ -32,13 +32,17 @@ import {
 } from "reactstrap";
 
 const contactInfoStyle = {fontSize:"14px", padding:"4px"};
+const submitButtonStyle = {width: "100%", backgroundColor: "white", borderWidth: "1px", borderColor: "#bababa", color: "#bababa"};
 
 export default function ContactForm(props) {
 
     const [showAlert, setAlert] = React.useState(false);
     const toggleAlert = () => setAlert(!showAlert);
 
+    const [showButton, setButton] = React.useState(false);
+    const toggleButton = () => setButton(!showButton);
     function sendEmail(e) {
+        toggleButton();
         e.preventDefault();
 
         emailjs.sendForm(Constants.EMAIL_JS_SERVICE_ID, Constants.EMAIL_JS_TEMPLATE_ID, e.target, Constants.EMAIL_JS_USER_ID)
@@ -76,8 +80,7 @@ export default function ContactForm(props) {
                         </InputGroup>
                         <br />
                         <Input type={'textarea'} name={'message'} placeholder={'your message...'} style={{minHeight: "100px"}} required/>
-                        <br />
-                        <Input type={'submit'} value={'send'} />
+                        <Button type={'submit'} style={submitButtonStyle} disabled={showButton}> send </Button>
                     </form>
                 </ModalBody>
             </Modal>

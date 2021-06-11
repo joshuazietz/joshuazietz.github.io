@@ -35,7 +35,6 @@ function IndexNavbar() {
 
     const toggleModal = () => setModal(!modal)
 
-
     const toggleNavbarCollapse = () => {
         setNavbarCollapse(!navbarCollapse);
         document.documentElement.classList.toggle("nav-open");
@@ -69,7 +68,6 @@ function IndexNavbar() {
                     <Link to={'/'} >
                         <NavbarBrand
                             data-placement="bottom"
-                            href="/"
                         >
                             <i className="fa fa-home"/>
                         </NavbarBrand>
@@ -114,16 +112,16 @@ function IndexNavbar() {
                                 <p className="d-lg-none">GitHub</p>
                             </NavLink>
                         </NavItem>
-                        <Link to={'me'} >
+                        <Link to={'/me'}>
                             <NavItem>
-                                <NavLink>
+                                <NavLink data-placement="bottom" >
                                     about me
                                 </NavLink>
                             </NavItem>
                         </Link>
-                        <Link to={'resume'} >
+                        <Link to={'/resume'}>
                             <NavItem>
-                                <NavLink>
+                                <NavLink data-placement="bottom">
                                     resume
                                 </NavLink>
                             </NavItem>

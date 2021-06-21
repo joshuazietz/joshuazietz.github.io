@@ -21,13 +21,13 @@ import React from "react";
 // reactstrap components
 import {Container} from "reactstrap";
 
-import SideComponentHeader from "../components/Headers/SideComponentHeader";
-import resume from "../assets/img/resume.pdf";
+import SideComponentHeader from "../Headers/SideComponentHeader";
+import resume from "../../assets/img/resume.pdf";
 
 function Resume() {
     return (
         <>
-            <SideComponentHeader name={'resume'} />
+            <SideComponentHeader />
             <div className="section profile-content">
                 <Container className={"text-center"}>
                     <h1> Resume </h1>

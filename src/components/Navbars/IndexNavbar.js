@@ -22,6 +22,8 @@ import {
     NavLink,
     Nav,
     Container,
+    UncontrolledDropdown,
+    DropdownItem, DropdownMenu, DropdownToggle
 } from "reactstrap";
 import ContactForm from "../main/Contact";
 
@@ -33,7 +35,7 @@ function IndexNavbar() {
 
     const [modal, setModal] = React.useState(false);
 
-    const toggleModal = () => setModal(!modal)
+    const toggleModal = () => setModal(!modal);
 
     const toggleNavbarCollapse = () => {
         setNavbarCollapse(!navbarCollapse);
@@ -112,6 +114,33 @@ function IndexNavbar() {
                                 <p className="d-lg-none">GitHub</p>
                             </NavLink>
                         </NavItem>
+                        <UncontrolledDropdown nav inNavbar>
+                            <DropdownToggle
+                                aria-expanded={false}
+                                aria-haspopup={true}
+                                caret
+                                data-toggle="dropdown"
+                                id="dropdownMenuButton"
+                                nav
+                            >
+                                projects
+                            </DropdownToggle>
+                            <DropdownMenu
+                                aria-labelledby="dropdownMenuButton"
+                                className="dropdown-info"
+                            >
+                                <DropdownItem
+                                    href={'/#/projects/impossible-game'}
+                                >
+                                    Impossible Game
+                                </DropdownItem>
+                                <DropdownItem
+                                    href={'/#/projects/portfolio'}
+                                >
+                                    Portfolio
+                                </DropdownItem>
+                            </DropdownMenu>
+                        </UncontrolledDropdown>
                         <NavItem>
                             <NavLink data-placement="bottom" href={'/#/me'} onClick={toggleNavbarCollapse}>
                                 about me

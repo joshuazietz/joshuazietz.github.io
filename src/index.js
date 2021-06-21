@@ -27,7 +27,9 @@ import "assets/demo/demo.css?v=1.3.0";
 // pages
 import Index from "views/Index.js";
 import ProfilePage from "components/main/ProfilePage.js";
-import Resume from "./views/Resume";
+import Resume from "./components/main/Resume";
+import Project from "./components/main/Project";
+import Constants from "./assets/Constants";
 // others
 
 ReactDOM.render(
@@ -41,6 +43,18 @@ ReactDOM.render(
           path="/me"
           component={(props) => <ProfilePage {...props} />}
       />
+      <Route
+          path="/projects/impossible-game"
+          component={(props) => <Project
+              project={Constants.IMPOSSIBLE_GAME}
+          />}
+      />
+        <Route
+            path="/projects/portfolio"
+            component={(props) => <Project
+                project={Constants.PORTFOLIO}
+            />}
+        />
     </HashRouter>,
   document.getElementById("root")
 );

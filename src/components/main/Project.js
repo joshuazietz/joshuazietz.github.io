@@ -23,12 +23,7 @@ import Constants from "../../assets/Constants";
 
 // reactstrap components
 import {
-    Alert, Button, Col, Container,
-    Input,
-    InputGroup,
-    InputGroupAddon,
-    InputGroupText, Modal, ModalBody, ModalHeader, Row
-
+ Button, Col, Container, Row
 } from "reactstrap";
 import SideComponentHeader from "../Headers/SideComponentHeader";
 

@@ -131,11 +131,13 @@ function IndexNavbar() {
                             >
                                 <DropdownItem
                                     href={'/#/projects/impossible-game'}
+                                    onClick={toggleNavbarCollapse}
                                 >
                                     Impossible Game
                                 </DropdownItem>
                                 <DropdownItem
                                     href={'/#/projects/portfolio'}
+                                    onClick={toggleNavbarCollapse}
                                 >
                                     Portfolio
                                 </DropdownItem>
